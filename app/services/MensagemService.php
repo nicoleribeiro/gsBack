@@ -1,8 +1,8 @@
 <?php
 
-namespace AgroTech\Services;
+namespace App\Services;
 
-use \AgroTech\Models\Mensagem;
+use \App\Models\Mensagem;
 
 class MensagemServices
 {

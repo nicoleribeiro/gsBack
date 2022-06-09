@@ -1,6 +1,6 @@
 <?php
 
-$url = 'https://github.com/nicoleribeiro/gsBack/tree/main/public_html/api';
+$url = 'https://github.com/nicoleribeiro/gsBack/public_html/';
 
 $class = '/mensagem';
 $param = '/1';
