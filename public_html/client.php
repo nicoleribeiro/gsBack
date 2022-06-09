@@ -1,5 +1,5 @@
 <?php
-    $url = 'https://github.com/nicoleribeiro/gsBack/public_html/api';
+    $url = 'http://localhost/gsBack/public_html/api';
 
     $class = '/mensagem';
     $param = '/1';
