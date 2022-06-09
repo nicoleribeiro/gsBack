@@ -1,11 +1,11 @@
 <?php
 
-    $url = 'http://localhost/gsBack/public_html/api';
+$url = 'http://localhost/gsBack/public_html/api';
 
-    $class = '/user';
-    $param = '';
+$class = '/user';
+$param = '';
 
-    $response = file_get_contents($url.$class.$param);
+$response = file_get_contents($url . $class . $param);
 
     //echo $response;
 
