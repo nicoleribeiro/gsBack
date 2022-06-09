@@ -11,12 +11,12 @@ if ($_GET['url']) {
     if ($url[0] === 'api') {
         array_shift($url);
 
-        $service = 'AgroTech\Services\\'.ucfirst($url[1].'Service');
+        $service = 'app\services\\' . ucfirst($url[1] . 'service');
         array_shift($url);
 
         $method = strtolower($_SERVER['REQUEST_METHOD']);
 
-        try{
+        try {
             $response = call_user_func_array(array(new $service, $method), $url);
 
             http_response_code(200);
@@ -25,7 +25,7 @@ if ($_GET['url']) {
                 'data' => $response
             ), JSON_UNESCAPED_UNICODE);
             exit;
-        }catch(\Exception $e){
+        } catch (\Exception $e) {
             http_response_code(404);
             echo json_encode(array(['error' => $e->getMessage()]), JSON_UNESCAPED_UNICODE);
             exit;

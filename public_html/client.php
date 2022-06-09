@@ -1,10 +1,10 @@
 <?php
-    $url = 'http://localhost/gsBack/public_html/api';
 
-    $class = '/mensagem';
-    $param = '/1';
+$url = 'https://github.com/nicoleribeiro/gsBack/tree/main/public_html/api';
 
-    $response = file_get_contents($url.$class.$param);
+$class = '/mensagem';
+$param = '/1';
 
-    echo $response;
-?>
+$response = file_get_contents($url . $class . $param);
+
+echo $response;
