@@ -14,7 +14,9 @@
             }
         }
         public function post(){
+            $data = $_POST;
 
+            return Mensagem::insert($data);
         }
         public function update(){
 
